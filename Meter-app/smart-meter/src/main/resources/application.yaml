@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/smart_meter_db
+    username: postgres
+    password: Shahneela@123
+  jpa:
+    hibernate:
+      ddl-auto: update   
+    show-sql: true
+server:
+  port: 8080
+kafka:
+  bootstrap-servers: kafka:9092

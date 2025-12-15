@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/smart_meter_agregrate
+    username: postgres
+    password: Shahneela@123
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+server:
+  port: 8081
+
+environment:
+  step1-service-url: http://smart-meter:8080/meter/readings
+scheduler:
+  cron: "0 0/1 * * * ?"
